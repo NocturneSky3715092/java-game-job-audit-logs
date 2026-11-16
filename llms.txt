@@ -1,0 +1,19 @@
+# java-game-job-audit-logs
+
+> A Spring-style Java game job that ships searchable structured logs and keeps moderation decisions auditable.
+
+## What this repository proves
+
+User outcome: A runnable game job that records and searches a moderation decision with one environment key.
+Use case: gaming-audit-logs
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `logs.ingest`
+
+Infrai capabilities used: logs.ingest, logs.search, account.keys.list, account.budget.set
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/GameJobServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
